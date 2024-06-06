@@ -1,0 +1,44 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+section {
+  margin: 50px;
+  padding: 50px;
+  color: #ffffff;
+  border-radius: 25px;
+  background-color: #10465E;
+}
+
+footer {
+  padding: 10px;
+}
+
+
+.button {
+  border: 0;
+  color: #515F69;
+  padding: 25px;
+}
+
+
+.button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #8697A6;
+
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+img {
+  width: 164px;
+  border-radius: 90px;
+}
+
+.fotoDePerfil {
+  width: 164px;
+}
