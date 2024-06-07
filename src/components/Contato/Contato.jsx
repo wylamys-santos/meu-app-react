@@ -17,14 +17,14 @@ function Contato() {
 
     const numeroWhatsapp = import.meta.env.VITE_WHATSAPP_NUMBER; // numero do whatsapp para o qual a mensagem será enviada
 
-    const linkWhatsapp = `https://wa.me/${numeroWhatsapp}text=${encodeURIComponent(texto)}`;
+    const linkWhatsapp = `https://wa.me/${numeroWhatsapp}text=${encodeURIComponent()}`;
 
     window.open(linkWhatsapp, '_blank');
   }
 
   function mascaraTelefone(event) {
     const texto = event.target.value;
-    const textoApenasNumeros = texto.replace(/\D/g, '');substring(0, 11);
+    const textoApenasNumeros = texto.replace(/\D/g, '');
 
     let telefoneFormatado = textoApenasNumeros.replace(/^(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
 
