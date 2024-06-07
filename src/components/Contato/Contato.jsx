@@ -15,9 +15,9 @@ function Contato() {
 
     const texto = `Nome: ${name}\nEmail: ${email}\nTelefone: ${telefone}\nMensagem: ${msg}`;
 
-    const numeroWhatsapp = import.meta.env.VITE_WHATSAPP_NUMBER; // numero do whatsapp para o qual a mensagem será enviada
+    const numeroWhatsapp = import.meta.env.VITE_WHATSAPP_NUMBER; 81982180856
 
-    const linkWhatsapp = `https://wa.me/${numeroWhatsapp}text=${encodeURIComponent()}`;
+    const linkWhatsapp = `https://w.app/oAlah2${numeroWhatsapp}text=${encodeURIComponent()}`;
 
     window.open(linkWhatsapp, '_blank');
   }
@@ -29,7 +29,7 @@ function Contato() {
     let telefoneFormatado = textoApenasNumeros.replace(/^(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
 
     if (textoApenasNumeros.length <= 11) {
-      telefoneFormatado = textoApenasNumeros.replace(/^(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+      telefoneFormatado = textoApenasNumeros.replace(/^(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
     }
 
     setTelefone(telefoneFormatado);
