@@ -17,7 +17,7 @@ function Contato() {
 
     const numeroWhatsapp = import.meta.env.VITE_WHATSAPP_NUMBER; 81982180856
 
-    const linkWhatsapp = `https://w.app/oAlah2${numeroWhatsapp}text=${encodeURIComponent()}`;
+    const linkWhatsapp = `https://contate.me/wylamys-santos=${numeroWhatsapp}text=${encodeURIComponent()}`;
 
     window.open(linkWhatsapp, '_blank');
   }
